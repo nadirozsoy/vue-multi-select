@@ -1,4 +1,3 @@
-// utils.ts
 import type { ICheckedData } from '@/types'
 import { ref, type Ref } from 'vue'
 
