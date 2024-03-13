@@ -76,7 +76,7 @@ const handlePageItems = () => {
           </template>
         </InfiniteScroll>
       </div>
-      <div class="flex h-fit min-h-[29rem] flex-col gap-2 rounded-xl border-2 p-4 bg-slate-100">
+      <div class="flex h-[29rem] flex-col gap-2 rounded-xl overflow-y-auto border-2 p-4 bg-slate-100">
         <span class="text-[--secondary-color] text-sm">{{ itemIds?.length }} item selected</span>
         <div class="flex flex-wrap gap-2">
           <SelectItem

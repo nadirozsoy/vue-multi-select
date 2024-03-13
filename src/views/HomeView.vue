@@ -13,7 +13,7 @@ const checkedCompanies = ref([])
 </script>
 
 <template>
-  <div class="containerSmall pt-20">
+  <div class="containerSmall pt-12 sm:pt-20">
     <MultiSelect
       :pagination="pagination"
       :items="characters"
