@@ -36,7 +36,7 @@ const highlightSearchTerm = (text: string, searchTerm: string): string => {
         @change="handleCheckedItems(item)"
       />
       <span
-        class="checkmark group-hover:border-primary cursor-pointer border border-[#e0e0e6] transition-all duration-200 group-hover:border"
+        class="checkmark cursor-pointer border border-[#e0e0e6] transition-all duration-200 group-hover:border group-hover:border-primary"
       />
     </label>
     <span

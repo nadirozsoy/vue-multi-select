@@ -70,14 +70,14 @@ const handlePageItems = () => {
           </template>
           <template v-else>
             <div class="flex h-[29rem] flex-col items-center justify-center gap-4">
-              <p class="text-[--secondary-color] text-sm">No items found</p>
+              <p class="text-sm text-[--secondary-color]">No items found</p>
               <Loader2 class="animate-spin" :size="16" />
             </div>
           </template>
         </InfiniteScroll>
       </div>
-      <div class="flex h-[29rem] flex-col gap-2 rounded-xl overflow-y-auto border-2 p-4 bg-slate-100">
-        <span class="text-[--secondary-color] text-sm">{{ itemIds?.length }} item selected</span>
+      <div class="flex h-[29rem] flex-col gap-2 overflow-y-auto rounded-xl border-2 bg-slate-100 p-4">
+        <span class="text-sm text-[--secondary-color]">{{ itemIds?.length }} item selected</span>
         <div class="flex flex-wrap gap-2">
           <SelectItem
             v-for="checkedItem in props.checkedItems"
