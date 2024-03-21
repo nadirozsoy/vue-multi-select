@@ -2,12 +2,12 @@
 import type { ICheckedData } from '@/types'
 
 type Props = {
-  checkedItem: ICheckedData
+  checkedItem: ICheckedData<string, string>
 }
 
 const emit = defineEmits(['handleCheckedItems'])
 
-function handleCheckedItems(item: ICheckedData) {
+function handleCheckedItems(item: ICheckedData<string, string>) {
   emit('handleCheckedItems', item)
 }
 

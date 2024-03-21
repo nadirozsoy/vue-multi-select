@@ -3,11 +3,11 @@ import { ref, type Ref } from 'vue'
 
 export const handleCheckedItems = (
   customItem: { label: string; value: string },
-  propsCheckedItems: Ref<ICheckedData[]>,
+  propsCheckedItems: Ref<ICheckedData<string, string>[]>,
   propsItemIds: Ref<string[]>,
   emit: (event: string, ...args: any[]) => void
 ) => {
-  const localCheckedItems: Ref<ICheckedData[]> = ref([...propsCheckedItems.value])
+  const localCheckedItems: Ref<ICheckedData<string, string>[]> = ref([...propsCheckedItems.value])
   const localItemIds: Ref<string[]> = ref([...propsItemIds.value])
 
   if (localCheckedItems.value?.find((item: { label: string; value: string }) => item?.value === customItem.value)) {

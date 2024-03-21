@@ -1,11 +1,11 @@
-export type ICheckedData = {
-  label: string
-  value: string
+export type ICheckedData<L = string, V = string> = {
+  label: L
+  value: V
 }
 
-export type IMultiSelect = {
-  itemIds?: string[]
-  checkedItems?: ICheckedData[]
+export type IMultiSelect<T = string, L = string, V = string> = {
+  itemIds?: T[]
+  checkedItems?: ICheckedData<L, V>[]
   items?: any[]
   searchPlaceholder?: string
   pagination: {

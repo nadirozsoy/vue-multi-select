@@ -31,7 +31,7 @@ const handleSearch = (search: string) => {
   emit('search', search)
 }
 
-const handleCheckedItems = (customItem: ICheckedData) => {
+const handleCheckedItems = (customItem: ICheckedData<string, string>) => {
   handleCheckedItemsUtil(
     customItem,
     ref(props.checkedItems),
